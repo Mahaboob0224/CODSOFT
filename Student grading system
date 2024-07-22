@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class StudentGradingSystem {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your maths marks");
+        int maths = in.nextInt();
+        System.out.println("Enter your English marks");
+        int English = in.nextInt();
+        int total = 0;
+        int Average;
+        total = maths + English;
+        System.out.println("total : "+total);
+        
+        float Averagepercentage;
+        float total_marks;
+        float Scored;
+        total_marks=200;
+        Scored = total;
+        Averagepercentage = (float)((Scored / total_marks) * 100);
+        System.out.println("Percentage ::" +Averagepercentage);
+
+        if (Averagepercentage>=100) {
+            System.out.println("Grade is A ");
+        }
+        else if (Averagepercentage<=90) {
+            System.out.println("Grade is B ");
+            
+        }
+    }
+    
+}
