@@ -1,0 +1,26 @@
+import java.util.*;
+public class AtmInterface{
+    public static void main(String[]args) {
+        long deposit,currentbalance=0,withdrawl,Accno;
+        String AccName;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Acc number");
+        Accno=in.nextLong();
+        System.out.println("Enter Your Acc Name");
+        AccName=in.next();
+        System.out.println("Enter Deposit Amount");
+        deposit = in.nextLong();
+        currentbalance+=deposit;
+        System.out.println("Deposited Amount is  "+currentbalance);
+        System.out.println("Enter withdrawl Amount" );
+        withdrawl=in.nextLong();
+        currentbalance=deposit-withdrawl;
+        System.out.println("Initial balance "+currentbalance);
+if (withdrawl<=deposit){
+    System.out.println("Withdrawl Successfull");
+}
+    else{
+    System.out.println("Insufficient Funds");
+}
+    }
+}
